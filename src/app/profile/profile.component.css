@@ -1,0 +1,140 @@
+#Groupe_62 {
+    position: absolute;
+    width: 237.375px;
+    height: 210.567px;
+    left: 1119.625px;
+    top: 9px;
+    overflow: visible;
+}
+#Groupe_60 {
+    position: absolute;
+    width: 237.375px;
+    height: 210.567px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#profile_20 {
+    position: absolute;
+    width: 237.375px;
+    height: 210.567px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#profile {
+    position: absolute;
+    width: 103.228px;
+    height: 210.567px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#name__alinguite {
+    left: 113.375px;
+    top: 3.313px;
+    position: absolute;
+    overflow: visible;
+    width: 125px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Jokerman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(26,30,27,1);
+}
+#role__guerrier {
+    left: 113.375px;
+    top: 44.356px;
+    position: absolute;
+    overflow: visible;
+    width: 116px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Jokerman;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(17,19,17,1);
+}
+#Groupe_61 {
+    position: absolute;
+    width: 105px;
+    height: 76px;
+    left: 99.688px;
+    top: 81.16px;
+    overflow: visible;
+}
+#Logout {
+    left: 0px;
+    top: 51px;
+    position: absolute;
+    overflow: visible;
+    width: 106px;
+    height: 25px;
+    text-align: left;
+    font-family: Segoe Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#list-friend {
+    left: 0px;
+    top: 25px;
+    position: absolute;
+    overflow: visible;
+    width: 98px;
+    height: 25px;
+    text-align: left;
+    font-family: Segoe Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#profile_b {
+    left: 4px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 94px;
+    height: 25px;
+    text-align: left;
+    font-family: Segoe Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#login {
+    left: 95.688px;
+    top: 161px;
+    position: absolute;
+    overflow: visible;
+    width: 89px;
+    height: 25px;
+    text-align: left;
+    font-family: Segoe Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#Home {
+    left: 9.688px;
+    top: 161px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    height: 25px;
+    text-align: left;
+    font-family: Segoe Script;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+
+

@@ -1,0 +1,25 @@
+<div id="Groupe_53">
+    <svg class="Rectangle_1">
+        <rect id="Rectangle_1" rx="103" ry="103" x="0" y="0" width="787" height="521">
+        </rect>
+    </svg>
+    <div id="list-myfriend" class="list_myfriend">
+        <div id="Grille_de_rptition_2">
+            <div id="Groupe_38" class="Groupe_38">
+
+                <app-item-all *ngFor="let friend of friends"
+                [schtroumpfName]="friend.name"
+                [schtroumpfRole]="friend.role"
+                [index]="friend.id"></app-item-all>
+
+            </div>
+           
+           
+        </div>
+    </div>
+    <div id="n__HeadingH1">
+        <span>My Friends</span>
+    </div>
+</div>
+
+

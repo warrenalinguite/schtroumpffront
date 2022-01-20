@@ -1,0 +1,37 @@
+<div id="Groupe_62">
+    <div id="Groupe_60">
+        <div id="profile_20" class="profile_20">
+            <img id="profile" [src]="cheminProfile" >
+                
+            <div id="name__alinguite">
+                <span>name : {{name}} </span>
+            </div>
+            <div id="role__guerrier">
+                <span>role : {{role}} </span>
+            </div>
+       
+        <ul id="Groupe_61">
+            <li *ngIf="log" id="Logout" routerLinkActive="active">
+                <a (click)="logout()">Logout</a>
+            </li>
+            <li *ngIf="!log" id="Logout" routerLinkActive="active">
+                <a routerLink="signup">signup</a>
+            </li>
+            <li routerLinkActive="active" id="list-friend">
+                <a routerLink="schtroumpf">list-friend</a>
+            </li>
+            <li routerLinkActive="active" id="profile_b">
+                <a routerLink="myprofile">profile</a>
+            </li>
+        </ul>
+    
+    <li *ngIf="!log" routerLinkActive="active" id="login">
+        <a routerLink="login">login</a>
+    </li>
+    <li routerLinkActive="active" id="Home">
+        <a routerLink="Home">Home</a>
+    </li>
+
+
+
+

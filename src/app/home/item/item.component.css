@@ -1,90 +1,6 @@
-.mediaViewInfo {
-    --web-view-name: Schtroumpfs;
-    --web-view-id: Schtroumpfs;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
-}
-:root {
-    --web-view-ids: Schtroumpfs;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-}
-#Schtroumpfs {
-    position: absolute;
-    width: 1366px;
-    height: 768px;
-    background-color: rgba(255,255,255,1);
-    overflow: hidden;
-    --web-view-name: Schtroumpfs;
-    --web-view-id: Schtroumpfs;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
-}
-#schtroumpf {
-    position: absolute;
-    width: 1366px;
-    height: 1025px;
-    left: 0px;
-    top: -89px;
-    overflow: visible;
-}
-#schtroumpf_m {
-    position: absolute;
-    width: 1366px;
-    height: 1025px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
-}
-#Groupe_59 {
-    position: absolute;
-    width: 787px;
-    height: 521px;
-    left: 290px;
-    top: 163px;
-    overflow: visible;
-}
-#Groupe_58 {
-    position: absolute;
-    width: 787px;
-    height: 521px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
-}
-#Groupe_51 {
-    position: absolute;
-    width: 787px;
-    height: 521px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
-}
-#Trac_2 {
-    opacity: 0.62;
-    fill: rgba(255,255,255,1);
-    stroke: rgba(112,112,112,1);
-    stroke-width: 1px;
-    stroke-linejoin: miter;
-    stroke-linecap: butt;
-    stroke-miterlimit: 4;
-    shape-rendering: auto;
-}
-.Trac_2 {
-    overflow: visible;
-    position: absolute;
-    width: 787px;
-    height: 521px;
-    left: 0px;
-    top: 0px;
-    transform: matrix(1,0,0,1,0,0);
-}
 #Grille_de_rptition_1 {
-    position: absolute;
+    
+    display: grid;
     width: 400px;
     height: 195px;
     left: 193.5px;
@@ -92,7 +8,9 @@
     overflow: hidden;
 }
 #Group {
-    position: absolute;
+    position: relative;
+   
+    display: grid;
     width: 400px;
     height: 49px;
     left: 0px;
@@ -100,7 +18,7 @@
     overflow: visible;
 }
 #list-allschtroumpf {
-    position: absolute;
+   
     width: 400px;
     height: 49px;
     left: 0px;
@@ -109,7 +27,7 @@
 }
 #Groupe_52 {
     opacity: 0.8;
-    position: absolute;
+    
     width: 400px;
     height: 49px;
     left: 0px;
@@ -117,7 +35,7 @@
     overflow: visible;
 }
 #Groupe_50 {
-    position: absolute;
+    
     width: 400px;
     height: 49px;
     left: 0px;
@@ -125,7 +43,7 @@
     overflow: visible;
 }
 #List_GroupFlush {
-    position: absolute;
+    
     width: 400px;
     height: 49px;
     left: 0px;
@@ -447,180 +365,6 @@
     font-weight: normal;
     font-size: 16px;
     color: rgba(40,167,69,1);
-}
-#Groupe_57 {
-    position: absolute;
-    width: 385px;
-    height: 68px;
-    left: 228px;
-    top: 51px;
-    overflow: visible;
-}
-#n__HeadingH1 {
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    overflow: hidden;
-    width: 386px;
-    height: 68px;
-    text-align: left;
-    font-family: HelveticaNeue-Medium;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    color: rgba(52,58,64,1);
-}
-#n_ {
-    left: 1341px;
-    top: 66px;
-    position: absolute;
-    overflow: visible;
-    width: 1px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Segoe Script;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(0,0,0,1);
-}
-#Groupe_62 {
-    position: absolute;
-    width: 237.375px;
-    height: 210.567px;
-    left: 1119.625px;
-    top: 9px;
-    overflow: visible;
-}
-#Groupe_60 {
-    position: absolute;
-    width: 237.375px;
-    height: 210.567px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
-}
-#profile_20 {
-    position: absolute;
-    width: 237.375px;
-    height: 210.567px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
-}
-#profile {
-    position: absolute;
-    width: 103.228px;
-    height: 210.567px;
-    left: 0px;
-    top: 0px;
-    overflow: visible;
-}
-#name__alinguite {
-    left: 113.375px;
-    top: 3.313px;
-    position: absolute;
-    overflow: visible;
-    width: 125px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Jokerman;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(26,30,27,1);
-}
-#role__guerrier {
-    left: 113.375px;
-    top: 44.356px;
-    position: absolute;
-    overflow: visible;
-    width: 116px;
-    white-space: nowrap;
-    text-align: left;
-    font-family: Jokerman;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(17,19,17,1);
-}
-#Groupe_61 {
-    position: absolute;
-    width: 105px;
-    height: 76px;
-    left: 99.688px;
-    top: 81.16px;
-    overflow: visible;
-}
-#Logout {
-    left: 0px;
-    top: 51px;
-    position: absolute;
-    overflow: visible;
-    width: 106px;
-    height: 25px;
-    text-align: left;
-    font-family: Segoe Script;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(0,0,0,1);
-}
-#list-friend {
-    left: 0px;
-    top: 25px;
-    position: absolute;
-    overflow: visible;
-    width: 98px;
-    height: 25px;
-    text-align: left;
-    font-family: Segoe Script;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(0,0,0,1);
-}
-#profile_b {
-    left: 4px;
-    top: 0px;
-    position: absolute;
-    overflow: visible;
-    width: 94px;
-    height: 25px;
-    text-align: left;
-    font-family: Segoe Script;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(0,0,0,1);
-}
-#login {
-    left: 95.688px;
-    top: 161px;
-    position: absolute;
-    overflow: visible;
-    width: 89px;
-    height: 25px;
-    text-align: left;
-    font-family: Segoe Script;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(0,0,0,1);
-}
-#Home {
-    left: 9.688px;
-    top: 161px;
-    position: absolute;
-    overflow: visible;
-    width: 61px;
-    height: 25px;
-    text-align: left;
-    font-family: Segoe Script;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    color: rgba(0,0,0,1);
 }
 
 
