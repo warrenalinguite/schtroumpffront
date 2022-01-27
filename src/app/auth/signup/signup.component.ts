@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
+import { SchtroumpfsService } from 'src/app/services/schtroumpfs.service';
 
 @Component({
   selector: 'app-signup',
@@ -20,20 +21,39 @@ export class SignupComponent implements OnInit {
   isSignUpFailed = false;
   errorMessage = '';
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(private authService: AuthService, private router: Router , private apiSctroumpf: SchtroumpfsService) { }
 
   ngOnInit():  void {
   }
 
   onSubmit(forms: NgForm): void {
-    const { username, email, password } = this.form;
+    const { username, email, password } = forms.value;
 
-    this.authService.register(forms.value).subscribe({
+   this.authService.register(forms.value).subscribe({
       next: data => {
-        console.log(data);
-        this.isSuccessful = true;
-        this.isSignUpFailed = false;
-        this.router.navigate(['login']);
+       console.log(data);
+
+       this.apiSctroumpf.getOne(forms.value).subscribe({
+         next: friend => {
+          this.apiSctroumpf.addFriend(friend.friend).subscribe({
+            next: friend => {
+             console.log(friend);
+            },
+            error: err => {
+              console.log(err);
+            }
+  
+          })
+
+         },
+         error: err =>{
+           console.log(err);
+         }
+       });
+       this.isSuccessful = true;
+       this.isSignUpFailed = false;
+       this.router.navigate(['login']);
+
         
       },
       error: err => {
@@ -41,6 +61,7 @@ export class SignupComponent implements OnInit {
         this.isSignUpFailed = true;
       }
     });
+   
   }
 
 }

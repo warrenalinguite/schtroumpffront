@@ -20,7 +20,10 @@ export class SchtroumpfsService {
   getOneSchtroumpfs(): Observable<any> {
     return this.http.get(API_URL + 'profil', httpOptions);
   }
+  getOne(friend:any): Observable<any> {
 
+     return this.http.post(API_URL + 'one',friend,httpOptions)
+  }
   modifyRole(role:any): Observable<any> {
     return this.http.put(API_URL + 'profile', role,httpOptions);
   }

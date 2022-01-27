@@ -19,6 +19,8 @@ import { SchtroumpfsService } from './services/schtroumpfs.service';
 import { TokenStorageService } from './services/token-storage.service';
 import { ItemComponent } from './home/item/item.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
+import { VirtualFriendComponent } from './virtual-friend/virtual-friend.component';
+import { ItemVirtualComponent } from './virtual-friend/item-virtual/item-virtual.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
     FriendsComponent,
     ItemFriendsComponent,
     ItemComponent,
-    MyProfileComponent
+    MyProfileComponent,
+    VirtualFriendComponent,
+    ItemVirtualComponent
   ],
   imports: [
     BrowserModule,
