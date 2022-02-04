@@ -4,26 +4,36 @@
             <rect id="Rectangle_1" rx="103" ry="103" x="0" y="0" width="411" height="456">
             </rect>
         </svg>
-        <div id="FormForm_GroupHelperDefault" class="Form_Form_Group_Helper_Default">
+        <div id="FormForm_GroupHelperDefault" class="Form_Form_Group_Helper_Default form-group">
             <span id="Helper_Text">
                 <span>We’ll never share your email with anyone else</span>
             </span>
-            <input id="FormInputTextDefault" class="Form_Input_Text_Default" type="text" name="email" required ngModel/>
-                
-            <label for="email" id="Group_Label">
+            <input id="FormInputTextDefault" class="Form_Input_Text_Default form-control" type="text" name="email" required ngModel #email="ngModel" />
+            <div class="alert-danger" *ngIf="email.errors && f.submitted">
+                <div *ngIf="email.errors['required']">Email is required</div>
+                <div *ngIf="email.errors['email']">
+                  Email must be a valid email address
+                </div>
+              </div>    
+            <label for="email" id="Group_Label" class="form-label">
                 <span>Email</span>
             </label>
         </div>
-        <div id="FormForm_GroupBasicDefault" class="Form_Form_Group_Basic_Default">
-            <label for="password" id="Group_Label_y">
+        <div id="FormForm_GroupBasicDefault" class="Form_Form_Group_Basic_Default form-group">
+            <label for="password" id="Group_Label_y" class="form-label">
                 <span>Password</span>
             </label>
-            <input id="FormInputTextDefault_z" class="Form_Input_Text_Default" type="password" name="password" required ngModel/>
+            <input id="FormInputTextDefault_z" class="Form_Input_Text_Default form-control" type="password" name="password" required ngModel #password="ngModel"/>
                 
-                
+            <div class="alert-danger" *ngIf="password.errors && f.submitted">
+                <div *ngIf="password.errors['required']">Password is required</div>
+                <div *ngIf="password.errors['minlength']">
+                  Password must be at least 6 characters
+                </div>
+              </div>   
             
         </div>
-        <button id="ButtonDefaultPrimary" class="Button_Default_Primary" type="submit" [disabled]="f.invalid">
+        <button id="ButtonDefaultPrimary" class="Button_Default_Primary btn btn-primary" type="submit" [disabled]="f.invalid">
             <svg class="Primary__007BFF">
                 <rect id="Primary__007BFF" rx="5" ry="5" x="0" y="0" width="66" height="37">
                 </rect>

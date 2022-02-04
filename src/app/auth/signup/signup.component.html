@@ -1,30 +1,40 @@
-<form id="Groupe_56"  (ngSubmit)="onSubmit(f)" #f="ngForm">
+<form id="Groupe_56"  (ngSubmit)="onSubmit(f)" #f="ngForm" >
     <svg class="Trac_1" viewBox="0 0 411 521">
         <path id="Trac_1" d="M 103 0 L 308 0 C 364.8853149414062 0 411 46.11466979980469 411 103 L 411 418 C 411 474.8853149414062 364.8853149414062 521 308 521 L 103 521 C 46.11466979980469 521 0 474.8853149414062 0 418 L 0 103 C 0 46.11466979980469 46.11466979980469 0 103 0 Z">
         </path>
     </svg>
-    <div id="FormForm_GroupHelperDefault" class="Form_Form_Group_Helper_Default">
+    <div id="FormForm_GroupHelperDefault" class="Form_Form_Group_Helper_Default form-group">
         <div id="Helper_Text">
             <span>We’ll never share your email with anyone else</span>
         </div>
-        <input id="FormInputTextDefault" class="Form_Input_Text_Default" type="text" name="email" ngModel required minlength="3" maxlength="20"/>
+        <input id="FormInputTextDefault" class="Form_Input_Text_Default form-control" type="text" name="email" ngModel required minlength="3" maxlength="20" #email="ngModel"/>
             
-            
+        <div class="alert-danger" *ngIf="email.errors && f.submitted">
+            <div *ngIf="email.errors['required']">Email is required</div>
+            <div *ngIf="email.errors['email']">
+              Email must be a valid email address
+            </div>
+          </div> 
         
-        <label id="Group_Label" for="email">
+        <label id="Group_Label" for="email" class="form-label">
             <div>Email</div>
         </label>
     </div>
-    <div id="FormForm_GroupBasicDefault" class="Form_Form_Group_Basic_Default">
-        <label id="Group_Label_x" for="password">
+    <div id="FormForm_GroupBasicDefault" class="Form_Form_Group_Basic_Default form-group ">
+        <label id="Group_Label_x" for="password" class="form-label">
             <div>Password</div>
         </label>
-        <input id="FormInputTextDefault_y" class="Form_Input_Text_Default" type="password" name="password" ngModel required minlength="3" maxlength="20"/>
+        <input id="FormInputTextDefault_y" class="Form_Input_Text_Default form-control" type="password" name="password" ngModel required minlength="3" maxlength="20" #password="ngModel"/>
             
-            
+        <div class="alert-danger" *ngIf="password.errors && f.submitted">
+            <div *ngIf="password.errors['required']">Password is required</div>
+            <div *ngIf="password.errors['minlength']">
+              Password must be at least 6 characters
+            </div>
+          </div>
        
     </div>
-    <button id="ButtonDefaultPrimary" class="Button_Default_Primary" type="submit" [disabled]="f.invalid">
+    <button id="ButtonDefaultPrimary" class="Button_Default_Primary btn btn-primary" type="submit" [disabled]="f.invalid">
         <svg class="Primary__007BFF">
             <rect id="Primary__007BFF" rx="5" ry="5" x="0" y="0" width="84" height="37">
             </rect>
@@ -33,12 +43,21 @@
             <span>SignUp</span>
         </div>
     </button>
-    <div id="FormForm_GroupBasicDefault_" class="Form_Form_Group_Basic_Default">
-        <label id="Group_Label_">
+    <div id="FormForm_GroupBasicDefault_" class="Form_Form_Group_Basic_Default form-group
+    ">
+        <label id="Group_Label_" class="form-label">
             <div>name</div>
         </label>
-        <input id="FormInputTextDefault_" class="Form_Input_Text_Default" type="text" name="name" required ngModel minlength="3" maxlength="20"/>         
-        
+        <input id="FormInputTextDefault_" class="Form_Input_Text_Default form-control" type="text" name="name" required ngModel minlength="3" maxlength="20" #name="ngModel"/>         
+        <div class="alert-danger" *ngIf="name.errors && f.submitted">
+            <div *ngIf="name.errors['required']">Username is required</div>
+            <div *ngIf="name.errors['minlength']">
+              Username must be at least 3 characters
+            </div>
+            <div *ngIf="name.errors['maxlength']">
+              Username must be at most 20 characters
+            </div>
+          </div>
     </div>
     <h1 id="n__HeadingH1" class="1__Heading_H1">
         <div id="n__HeadingH1_bc">
@@ -50,8 +69,8 @@
         <label id="Group_Label_be">
             <div>role</div>
         </label>
-        <div id="FormSelectDefault" class="Form_Select_Default">
-            <select id="InputBase_bg" class="Input_Base" name="role" ngModel>
+        <div id="FormSelectDefault" class="Form_Select_Default form-group">
+            <select id="InputBase_bg" class="Input_Base form-control" name="role" ngModel>
                 
                     <option value=""></option>
                     <option value="alchimiste">Alchimiste</option>
@@ -74,6 +93,9 @@
             
         </div>
     </div>
+    
 </form>
-
+<div class="alert alert-success" *ngIf="isSuccessful">
+    Your registration is successful!
+  </div>
 
